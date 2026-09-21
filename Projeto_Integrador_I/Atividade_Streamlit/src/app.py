@@ -15,7 +15,7 @@ st.markdown("Análise de velocidade permitida e ocupação de circuitos por tipo
 
 # Carregar dados
 #df = pd.read_csv(StringIO(csv_data))
-df = pd.read_csv("C:/Users/dougm/OneDrive/Documentos/Projetos_Python/Projetos_FATEC_CD_2026_2028_Public/Projeto_Integrador_I/Atividade_Streamlit/data/dataset_sinalizacao_ferroviaria_amostra.csv")
+df = pd.read_csv("Projeto_Integrador_I/Atividade_Streamlit/data/dataset_sinalizacao_ferroviaria.csv")
 
 # Criar abas para os gráficos
 tab1, tab2 = st.tabs(["📈 Velocidade vs Tempo de Ocupação", "📊 Aspecto do Sinal por Tipo"])
