@@ -10,7 +10,7 @@ st.set_page_config(page_title="Dashboard de Sinalização Ferroviária", layout=
 st.title("🚆 Dashboard de Sinalização Ferroviária")
 st.markdown("Análise de velocidade permitida e ocupação de circuitos por tipo de sinalização")
 
-# Dados embutidos (substitua por st.file_uploader se preferir upload de CSV)
+# Definição da base de dados
 csv_data = st.file_uploader("Carregue a base CSV", type="csv")
 
 # Carregar dados
