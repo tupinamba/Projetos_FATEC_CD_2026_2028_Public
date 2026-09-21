@@ -11,14 +11,11 @@ st.title("🚆 Dashboard de Sinalização Ferroviária")
 st.markdown("Análise de velocidade permitida e ocupação de circuitos por tipo de sinalização")
 
 # Definição da base de dados
-csv_data = st.file_uploader("Carregue a base CSV", type="csv")
+#csv_data = st.file_uploader("Carregue a base CSV", type="csv")
 
 # Carregar dados
-df = pd.read_csv(StringIO(csv_data))
-
-# Mostrar dados brutos (opcional)
-with st.expander("📋 Visualizar dados brutos"):
-    st.dataframe(df)
+#df = pd.read_csv(StringIO(csv_data))
+df = pd.read_csv("C:/Users/dougm/OneDrive/Documentos/Projetos_Python/Projetos_FATEC_CD_2026_2028_Public/Projeto_Integrador_I/Atividade_Streamlit/data/dataset_sinalizacao_ferroviaria_amostra.csv")
 
 # Criar abas para os gráficos
 tab1, tab2 = st.tabs(["📈 Velocidade vs Tempo de Ocupação", "📊 Aspecto do Sinal por Tipo"])
