@@ -69,8 +69,8 @@ with tab2:
     fig_bar = px.bar(
         df_grouped,
         x='aspecto_sinal',
-        y='tipo_sinalizacao',
-        color='aspecto_sinal',
+        y='count',
+        color='tipo_sinalizacao',
         text='count',
         title='Contagem de Aspectos de Sinal por Tipo de Sinalização',
         labels={
